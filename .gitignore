@@ -1,0 +1,13 @@
+# Terraform
+**/.terraform/
+**/.terraform.lock.hcl
+**/*.tfstate
+**/*.tfstate.*
+**/*.log
+
+# Secrets / credentials
+**/kubeconfig
+**/talosconfig
+**/configs/
+**/nodes/
+**/apply*.log
