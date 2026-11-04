@@ -39,7 +39,9 @@ that booted but never came up (see `docs/troubleshooting.md`):
 .
 ├── README.md
 ├── docs/
-│   └── troubleshooting.md
+│   ├── troubleshooting.md            # boot/validation failures and fixes
+│   ├── nfs-storage.md                # NFS storage setup (LXC + provisioner)
+│   └── app-deployment-patterns.md    # Deployment/StatefulSet recipes + gotchas
 └── terraform/
     ├── providers.tf     # bpg/proxmox + siderolabs/talos
     ├── variables.tf
@@ -47,6 +49,12 @@ that booted but never came up (see `docs/troubleshooting.md`):
     ├── outputs.tf
     └── .gitignore
 ```
+
+## Docs index
+
+- [Troubleshooting](docs/troubleshooting.md) — why nodes failed to boot, and the fixes
+- [NFS storage](docs/nfs-storage.md) — shared storage via an NFS server in LXC + the `nfs-client` StorageClass
+- [App deployment patterns](docs/app-deployment-patterns.md) — Deployment/StatefulSet recipes, PodSecurity, ConfigMaps/Secrets, and a full PostgreSQL-on-NFS example
 
 ## Prerequisites
 
