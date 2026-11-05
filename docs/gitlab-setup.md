@@ -82,9 +82,10 @@ Key points in `gitlab-values.yaml`:
 
 ## Runner (LXC on Proxmox)
 
-- C 301, privileged, Docker + `gitlab-runner`
-- Registers to GitLab (via a NodePort to the webservice)
-- `gitlab-runner register --url http://10.10.10.200:30080 --registration-token <token> --executor docker`
+The CI/CD runner runs in a dedicated LXC container on the Proxmox host
+(Docker executor), joined to the tailnet so builds reach GitLab over HTTPS
+MagicDNS. See [gitlab-runner.md](gitlab-runner.md) for the full setup,
+the TUN/DNS requirements, and gotchas.
 
 ## Access
 

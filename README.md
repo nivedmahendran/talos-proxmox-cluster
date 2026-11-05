@@ -57,6 +57,7 @@ that booted but never came up (see `docs/troubleshooting.md`):
 - [App deployment patterns](docs/app-deployment-patterns.md) — Deployment/StatefulSet recipes, PodSecurity, ConfigMaps/Secrets, and a full PostgreSQL-on-NFS example
 - [Tailscale network](docs/tailscale-network.md) — secure remote access (no public IP): operator+Ingress HTTPS apps, subnet router for remote kubectl, and ACLs
 - [GitLab setup](docs/gitlab-setup.md) — full GitLab with external PostgreSQL/Redis/S3, Tailscale ingress, and an LXC CI runner
+- [GitLab Runner](docs/gitlab-runner.md) — CI/CD runner in a dedicated LXC container, joined to the tailnet
 
 ## Prerequisites
 
