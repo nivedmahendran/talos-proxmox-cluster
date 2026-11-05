@@ -58,6 +58,7 @@ that booted but never came up (see `docs/troubleshooting.md`):
 - [Tailscale network](docs/tailscale-network.md) — secure remote access (no public IP): operator+Ingress HTTPS apps, subnet router for remote kubectl, and ACLs
 - [GitLab setup](docs/gitlab-setup.md) — full GitLab with external PostgreSQL/Redis/S3, Tailscale ingress, and an LXC CI runner
 - [GitLab Runner](docs/gitlab-runner.md) — CI/CD runner in a dedicated LXC container, joined to the tailnet
+- [Skills](skills/README.md) — reusable OpenCode diagnostics for this stack (e.g. `homelab-triage`)
 
 ## Prerequisites
 
