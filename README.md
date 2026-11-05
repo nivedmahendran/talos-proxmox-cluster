@@ -55,6 +55,7 @@ that booted but never came up (see `docs/troubleshooting.md`):
 - [Troubleshooting](docs/troubleshooting.md) — why nodes failed to boot, and the fixes
 - [NFS storage](docs/nfs-storage.md) — shared storage via an NFS server in LXC + the `nfs-client` StorageClass
 - [App deployment patterns](docs/app-deployment-patterns.md) — Deployment/StatefulSet recipes, PodSecurity, ConfigMaps/Secrets, and a full PostgreSQL-on-NFS example
+- [Tailscale network](docs/tailscale-network.md) — secure remote access (no public IP): operator+Ingress HTTPS apps, subnet router for remote kubectl, and ACLs
 
 ## Prerequisites
 
